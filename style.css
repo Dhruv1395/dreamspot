@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+header{
+    position:fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+nav{
+    background-color: white;
+}
+nav .logo{
+    width:150px;
+}
+nav .logo img{
+    width:100%;
+}
+aside{
+    height: 100%;
+    float: left;
+}
+#sidenav{
+    height: 100vh;
+    width:0;
+    background-color: rgba(0, 0, 0, 0.954);
+    position: fixed;
+    top:50px;
+    z-index: 1;
+   
+}
+#sidenav i{
+    float: right;
+    margin: 20px;
+    font-size: 25px;
+}
+#sidenav h4{
+    margin: 50px 0 0 20px;
+    color: white;
+}
+
+#home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url('bg.jpg');
+    background-size:cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    opacity:1;
+    position: relative;
+}
+#home .content{
+    width: 500px;
+    text-align: center;
+      
+    
+}
+
+
+#home h5{
+    font-size: 20px;
+    
+}
+#home h1{
+    font-size: 40px;
+}
+
+#home span{
+    color: rgb(10, 129, 226);
+    font-weight: bold;
+    font-size: 35px;
+}
+#home button{
+    padding: 10px 15px;
+    border: none;
+    background-color:rgb(18, 138, 236) ;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#sidemenu{
+    display: none;
+}
+.shadow{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    margin-left: 10px;
+    transform: translateY(-50px);
+    cursor: pointer;
+   
+}
+.shadow:hover{
+    border-bottom: 5px solid rgb(25, 86, 227);
+    transition:0.2s;
+}
+.shadow h5{
+    padding-top: 20px;
+}
+.a{
+    transform: translateY(-80px);
+}
+.a:hover{
+    border-bottom: 5px solid rgb(60, 157, 11);
+    transition:0.2s;
+}
+.shadow img{
+    width: 120px;
+}
